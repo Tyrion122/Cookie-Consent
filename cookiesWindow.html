@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buiskits</title>
+</head>
+<body>
+    <h1>Your cookies are safe with us :)</h1>
+    <button id="buttonAccept">Accept</button>
+    <button id="buttonDecline">Decline</button>
+    <script>
+        let Decision; 
+        document.getElementById('buttonAccept').addEventListener('click', () => 
+            {
+                Decision = true;
+                window.opener.console.log('Користувач прийняв cookies');
+                window.close();
+        });
+        document.getElementById('buttonDecline').addEventListener('click', () => 
+            {
+                Decision = false;
+                window.opener.console.log('Користувач відхилив cookies');
+                window.close();
+        });        
+    </script>
+</body>
+</html>
