@@ -14,13 +14,13 @@
         document.getElementById('buttonAccept').addEventListener('click', () => 
             {
                 Decision = true;
-                window.opener.console.log('Користувач прийняв cookies');
+                window.opener.console.log('User accepted cookies');
                 window.close();
         });
         document.getElementById('buttonDecline').addEventListener('click', () => 
             {
                 Decision = false;
-                window.opener.console.log('Користувач відхилив cookies');
+                window.opener.console.log('User declined cookies');
                 window.close();
         });        
     </script>
